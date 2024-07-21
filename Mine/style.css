@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #081b29;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    padding: 50px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 0 4    0px;
+    display: flex;
+    align-items: center;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.adem{
+    font-size: 40px;
+    font-weight: 600;
+}
+.hide{
+    font-size: 22px;
+    font-weight: 300;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menubutton{
+    display: none;
+}
+
+/* do for active from dave gray video*/
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.homearticle h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.homearticle h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;    
+}
+.homearticle p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.contactme{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.hireme{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.hireme a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1; 
+}
+.hireme a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+.hireme a::before{
+    content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 0;
+     height: 100%;
+     background: red;
+     z-index: -1;
+     transition: 0.5s;
+}
+.hireme a:hover::before{
+    width: 100%;
+}
+
+
+@media (min-width: 900px){
+    nav{
+        padding: 50px;
+    }
+    .adem{
+        font-size: 35px;
+    }
+    .navbar{
+        font-size: 25px;
+    }
+    .homearticle h1{
+        font-size: 40px;
+    }
+    .homearticle h3{
+        font-size: 29px;   
+    }
+    .homearticle p{
+        font-size: 24px;
+    }
+    .contactme{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 450px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .hide{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+/*nav a:hover{
+    background-color: red;
+}
+.adem{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+body {
+    background: #081b29;
+    color: white;
+} 
+
+
+
+
+
+
